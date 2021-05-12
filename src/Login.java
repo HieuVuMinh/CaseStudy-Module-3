@@ -6,6 +6,7 @@ public class Login {
     ManageLargeMotorcycles motorcycles = new ManageLargeMotorcycles();
     Discount customers = new Discount();
 
+
     Scanner sc = new Scanner(System.in);
 
     public void login() {

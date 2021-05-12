@@ -14,12 +14,12 @@ public class Main {
         runMain(customers, login, sc);
     }
 
-    private static void runMain(ManageCustomers customers, Login login, Scanner sc) {
+    public static void runMain(ManageCustomers customers, Login login, Scanner sc) {
         int selection = sc.nextInt();
         loginMenu(customers, login, sc, selection);
     }
 
-    private static void loginMenu(ManageCustomers customers, Login login, Scanner sc, int selection) {
+    public static void loginMenu(ManageCustomers customers, Login login, Scanner sc, int selection) {
         switch (selection){
             case 1 -> {
                 login.login();
@@ -53,7 +53,7 @@ public class Main {
         }
     }
 
-    private static void areYouCustomerOrManage() {
+    public static void areYouCustomerOrManage() {
         System.out.println("-------------------------");
         System.out.println("|--------{*****}--------|");
         System.out.println("|  1. You are Customer  |");

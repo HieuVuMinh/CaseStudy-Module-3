@@ -11,12 +11,13 @@ public class LargeMotorcyclesType extends LargeMotorcycles{
         this.description = description;
     }
 
-    public LargeMotorcyclesType(int motorcyclesID, String motorcyclesName, double motorcyclesPrice, String motorcyclesProducer, String color, String description) {
-        super(motorcyclesID, motorcyclesName, motorcyclesPrice);
+    public LargeMotorcyclesType(int motorcyclesID, String motorcyclesName, double motorcyclesPrice, String motorcyclesProducer, String color, int motorcyclesAmount, String description) {
+        super(motorcyclesID, motorcyclesName, motorcyclesPrice, motorcyclesAmount);
         this.motorcyclesProducer = motorcyclesProducer;
         this.color = color;
         this.description = description;
     }
+
 
     public String getMotorcyclesProducer() {
         return motorcyclesProducer;
@@ -46,6 +47,6 @@ public class LargeMotorcyclesType extends LargeMotorcycles{
     public String toString() {
         return "Motorcycles ID: " + getMotorcyclesID() + ", Motorcycles Name: " + getMotorcyclesName() +
                 ", Motorcycles Price: " + getMotorcyclesPrice() + " USD" + ", Motorcycles Producer: " + motorcyclesProducer +
-                ", Color: " + color + ", Description: " + description + "\n";
+                ", Color: " + color + ", Description: " + description + ", Motorcycles Amount: " + getMotorcyclesAmount() + "\n";
     }
 }
